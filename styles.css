@@ -3,6 +3,12 @@ body{
     display: flex;
     flex-direction: column;
     height: 100dvh;
+    flex-direction: column;
+  justify-content : space-between;
+}
+.footer, .header, .hero, .quote {
+    background-color: black;
+
 }
 
 li{
@@ -12,7 +18,7 @@ li{
 a{
     text-decoration: none;
     color: white;
-    font-size: 50px;
+    font-size: 24px;
     padding: 10px;
 }
 
@@ -22,9 +28,15 @@ a{
     align-items: center;
     padding-inline: 32px;
     position: sticky; top: 0;
-
-
 }
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+
 .hero{
     display: flex;
     color: white;
@@ -37,11 +49,34 @@ a{
     flex-direction: column;
     justify-content: center;
 }
+
+.herocontent>h2{
+    font-size: 18px;
+}
+.herocontent>h1{
+    font-size: 24px;
+}
+
+.herocontent>button{
+    background-color: white;
+    font-weight: 400;
+    font-size: 18px;
+    width: fit-content;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    border-radius: .75rem;
+
+}
+
 .info{
     display: flex;
     flex-direction: column;
     align-items: center;
 
+}
+
+.info>h1{
+    font-size: 36px;
 }
 .quote{
     color: white;
@@ -52,8 +87,13 @@ a{
     padding-inline: 45px;
 
 }
-.quote h5{
-    color: red;
+.quote>h3{
+    font-size: 36px;
+    font-style:italic;
+}
+.quote>h5{
+    padding-right: 125px;
+    align-self: flex-end;
 }
 
 .cta{
@@ -67,17 +107,24 @@ a{
     display: flex;
     flex-direction: column;
 }
+
+.ctatext>button{
+
+    background-color: white;
+    font-weight: 400;
+    font-size: 40px;
+    max-width: 250px;
+    border: 1px solid white;
+    padding: 6px 12px;
+    border-radius: .75rem;
+}
 .footer{
     display: flex;
-    color: white;
     justify-content: center;
+    color: white;
     font-size: 32px;
     font-weight: 600;
 
 }
 
 
-.footer, .header, .hero, .quote {
-     background-color: black;
-
-}
